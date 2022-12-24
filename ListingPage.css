@@ -1,0 +1,202 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100%;
+    padding:1% 10%;
+}
+
+.zomato_logo{
+ width:100%;
+ height:30px;
+ margin-top:20px;
+ margin-bottom:20px;
+}
+ .search{
+  box-shadow: 0px 1px 5px grey;
+  position:relative;
+  border-radius:1rem;
+  width:70%;
+  height:50px;
+  margin-top:20px;
+  margin-left:5%;
+  padding:15px;
+}
+.search_icon{
+width:100px;
+height:20px;
+left:20px;
+position:absolute;
+}
+input[type="search"]{
+  width:100%;
+  height:100%;
+  padding-left:15%;
+  outline:none;
+  border:0px;
+}
+.left_nav_items{
+  display: flex;
+  justify-content: space-between;
+}
+.nav_item{
+font-size:23px;
+color:grey;
+margin-left:35%;
+padding-top:5%;
+}
+.address{
+ /* margin-left:10%; */
+ padding-left:10%;
+ padding-right:5%;
+ margin-top:30px;
+}
+.address a{
+  color:grey;
+  line-height:2em;
+}
+.nav_logos{
+    height:40px;
+}
+.nav2{
+width:100%;
+display:flex;
+gap:10%;
+justify-content: center;
+margin-top:10px;
+}
+.nav_logos_cont{
+margin-right:5px;
+
+display:inline-block;
+  border-radius:50%;
+  background-color:#f8f8f8;
+  padding:10px;
+}
+.nav2 a{
+  font-size:25px;
+  color:rgb(100, 95, 95);
+  display:flex;
+  align-items: center;
+
+}
+.filter_div{
+  display:flex;
+  overflow-x:scroll;
+margin-top:20px;
+padding-left:10%;
+padding-right:10%;
+position:sticky;
+top:0px;
+display:flex;
+z-index:99;
+align-items:center;
+height:100px;
+margin-bottom:20px;
+
+background-color: white;
+
+}
+.filter_div button{
+  outline:none;
+  height:60px;
+  background-color: white;
+  border:1px solid rgb(156, 156, 156);
+  color:rgb(190, 189, 189);
+  padding: 10px;
+  margin-left:10px;
+  cursor:pointer;
+  border-radius: 0.675rem;
+}
+.filter_div button:hover{
+  background-color: red;
+  color:white;
+}
+.filter_result_div,.brands_div{
+  background-color: #e7e1e1;
+  /* margin-top:30px; */
+  padding-top:3%;
+  padding-bottom:5%;
+  
+}
+.filter_result_div h1,.brands_div h1{
+  text-transform:uppercase;
+  padding-left:10%;
+ font-size:30px;
+ /* font-weight:550; */
+ color:#2b2b2b;
+}
+.corousal{
+margin-top:50px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+}
+.corousal_image{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background-color: white;
+  box-shadow:0px 0px 10px grey;
+  padding:15px; 
+  overflow:hidden;
+}
+.brand_image{
+ width:100%;
+ height:100;
+}
+.corousal_items{
+  display:flex;
+  flex-direction:column;
+}
+.filter_result_div .corousal_image{
+  padding:0px;
+}
+.item_image{
+width:100%;
+height:100%;
+border-radius:50%;
+}
+
+.item_name{
+text-align:center;
+font-size:25px;
+}
+
+.brands_div{
+  margin-bottom:150px;
+}
+
+ 
+@media(max-width:600px){
+  .address{
+    font-size:14px;
+  }
+  .nav2 a,.item_name{
+    font-size:16px;
+  }
+  .nav_logos{
+    height:30px;
+}
+.corousal_image{
+  width:100px;
+  height:100px;
+}
+.filter_result_div h1,.brands_div h1{
+   font-size:20px;
+}
+.filter_div button{
+  font-size:15px;
+}
+
+  
+}
